@@ -15,7 +15,7 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: microdemo
+        - name: microdemokubectl
           image: regt94/microdemo:latest
           env:
             - name: FOO
@@ -28,7 +28,7 @@ spec:
               cpu: 250m
               memory: 256Mi
           ports:
-            - containerPort: 80
+            - containerPort: 8080
               name: microdemo
 ---
 apiVersion: v1
@@ -38,6 +38,6 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 80
+    - port: 8080
   selector:
     app: microdemo

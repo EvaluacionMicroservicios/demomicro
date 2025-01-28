@@ -1,0 +1,5 @@
+com\micro\demo\microdemo\Model\Producto.class
+com\micro\demo\microdemo\Service\ProductoService.class
+com\micro\demo\microdemo\MicrodemoApplication.class
+com\micro\demo\microdemo\Repository\ProductoRepository.class
+com\micro\demo\microdemo\Controller\ProductoController.class
